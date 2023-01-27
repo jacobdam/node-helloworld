@@ -1,4 +1,9 @@
 module.exports = {
+  apps: [
+    {
+      script: 'index.js',
+    },
+  ],
   deploy: {
     production: {
       user: 'opc',
