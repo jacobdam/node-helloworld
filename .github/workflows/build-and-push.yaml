@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - main
+      - feature/github-actions
+      - feature/github-actions-*
 
 jobs:
   push_to_registry:
@@ -16,7 +18,7 @@ jobs:
       - name: Hello
         shell: bash
         run: |
-          echo 'Hello world '
+          echo 'Hello world'
 
       # - name: Log in to the Container registry
       #   uses: docker/login-action@65b78e6e13532edd9afa3aa52ac7964289d1a9c1
